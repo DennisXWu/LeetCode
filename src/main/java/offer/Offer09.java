@@ -18,13 +18,13 @@ import java.util.Stack;
  * [[],[3],[],[]]
  * 输出：[null,null,3,-1]
  */
-public class CQueue {
+public class Offer09 {
 
     //两个栈，一个出栈，一个入栈
     private Stack<Integer> stack1;
     private Stack<Integer> stack2;
 
-    public CQueue() {
+    public Offer09() {
         stack1 = new Stack<>();
         stack2 = new Stack<>();
     }
