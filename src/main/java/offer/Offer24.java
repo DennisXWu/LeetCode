@@ -26,6 +26,17 @@ public class Offer24 {
         return pre;
     }
 
+    public ListNode recReverseList(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        ListNode newNode = recReverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newNode;
+    }
+
 
     // 栈
     public ListNode reverseList(ListNode head) {
