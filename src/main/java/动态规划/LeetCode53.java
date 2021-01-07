@@ -1,4 +1,4 @@
-package 字符串.simple;
+package 动态规划;
 
 /**
  * Created by wxg on 2020/9/4.
