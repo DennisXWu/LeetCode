@@ -38,7 +38,7 @@ public class Offer24 {
     }
 
 
-    // 栈
+    // LeetCode.栈
     public ListNode reverseList(ListNode head) {
         Stack<ListNode> stack = new Stack<>();
         if (head == null) {
