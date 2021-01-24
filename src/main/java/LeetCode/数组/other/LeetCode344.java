@@ -1,4 +1,4 @@
-package LeetCode.字符串.others;
+package LeetCode.数组.other;
 
 /**
  * Created by wxg on 2020/9/3.

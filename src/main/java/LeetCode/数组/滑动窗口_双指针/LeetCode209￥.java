@@ -1,4 +1,4 @@
-package LeetCode.字符串.滑动窗口_双指针;
+package LeetCode.数组.滑动窗口_双指针;
 
 /**
  * Created by wxg on 2021/1/18.
