@@ -1,4 +1,4 @@
-package LeetCode.数据结构.数组.other;
+package LeetCode.数据结构.哈希表;
 
 /**
  * Created by wxg on 2020/9/3.
