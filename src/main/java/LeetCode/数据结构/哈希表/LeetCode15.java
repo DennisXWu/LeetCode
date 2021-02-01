@@ -12,50 +12,34 @@ import java.util.*;
  * 注意：答案中不可以包含重复的三元组。
  */
 public class LeetCode15 {
-
     public static void main(String[] args) {
-        int[] array = new int[]{-1, 0, 1, 2, -1, -4};
         LeetCode15 leetCode15 = new LeetCode15();
-        leetCode15.threeSum(array);
+        leetCode15.threeSum(new int[]{-1, 0, 1, 2, -1, -4});
     }
 
+    //双指针
     public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+
+        Set<List<Integer>> set = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int l = i + 1;
+            int r = nums.length - 1;
+            while (l < r) {
+                if (nums[i] + nums[r] + nums[l] == 0) {
+                    set.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                    r--;
+                    l++;
+                } else if (nums[i] + nums[r] + nums[l] > 0) {
+                    r--;
+                } else {
+                    l++;
+                }
+            }
+        }
         List<List<Integer>> list = new ArrayList<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            int tmp = nums[i];
-            List<Integer> list1 = convert(nums);
-            list1.remove(i);
-            List<Integer> solve = solve(list1, 0 - tmp);
-            if (solve != null) {
-                solve.add(tmp);
-                list.add(solve);
-            }
-        }
+        list.addAll(set);
         return list;
-    }
-
-    public List<Integer> convert(int[] nums) {
-        List<Integer> list1 = new ArrayList<>();
-        for (int i = 0; i < nums.length; i++) {
-            list1.add(nums[i]);
-        }
-        return list1;
-    }
-
-
-    public List<Integer> solve(List<Integer> nums, int target) {
-        Set<Integer> set = new HashSet<>();
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < nums.size(); i++) {
-            if (set.contains(target - nums.get(i))) {
-                list.add(nums.get(i));
-                list.add(target - nums.get(i));
-                return list;
-            } else {
-                set.add(nums.get(i));
-            }
-        }
-        return null;
     }
 }
