@@ -1,9 +1,9 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 /**
  * Created by wxg on 2021/2/3.
  */
-public class LeetCode415 {
+public class LeetCode415_easy {
     public String addStrings(String nums1, String nums2) {
         int length1 = nums1.length() - 1;
         int length2 = nums2.length() - 1;

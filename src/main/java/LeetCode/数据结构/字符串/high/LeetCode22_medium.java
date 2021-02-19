@@ -1,4 +1,4 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,12 +6,12 @@ import java.util.List;
 /**
  * Created by wxg on 2020/12/14.
  */
-public class LeetCode22 {
+public class LeetCode22_medium {
     List<String> list = new ArrayList<>();
     int n;
 
     public static void main(String[] args) {
-        System.out.println(new LeetCode22().generateParenthesis(3));
+        System.out.println(new LeetCode22_medium().generateParenthesis(3));
     }
 
     public List<String> generateParenthesis(int n) {

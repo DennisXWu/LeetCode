@@ -1,4 +1,4 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 /**
  * Created by wxg on 2021/2/4.
@@ -14,7 +14,7 @@ package LeetCode.数据结构.字符串.important;
  * 输入："Let's take LeetCode contest"
  * 输出："s'teL ekat edoCteeL tsetnoc"
  */
-public class LeetCode557 {
+public class LeetCode557_easy {
 
     //方法1
     public String reverseWords(String s) {

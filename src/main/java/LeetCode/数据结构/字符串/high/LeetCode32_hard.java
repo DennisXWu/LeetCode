@@ -1,11 +1,11 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 import java.util.Stack;
 
 /**
  * Created by wxg on 2020/9/9.
  */
-public class LeetCode32 {
+public class LeetCode32_hard {
 
     public static void main(String[] args) {
         System.out.println(longestValidParentheses1("()(()()("));

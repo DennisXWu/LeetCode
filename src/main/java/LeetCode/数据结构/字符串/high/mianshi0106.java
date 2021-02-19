@@ -1,4 +1,4 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 /**
  * Created by wxg on 2021/2/3.

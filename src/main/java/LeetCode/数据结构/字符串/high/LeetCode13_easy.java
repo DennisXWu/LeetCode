@@ -1,4 +1,4 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 /**
  * Created by wxg on 2020/8/18.
@@ -50,7 +50,7 @@ import java.util.Map;
  * 输出: 1994
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  */
-public class LeetCode13 {
+public class LeetCode13_easy {
     public static void main(String[] args) {
         String str = "IV";
         System.out.println(romanToInt(str));

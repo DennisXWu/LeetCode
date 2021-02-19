@@ -1,4 +1,4 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 /**
  * Created by wxg on 2020/9/3.
@@ -26,7 +26,7 @@ package LeetCode.数据结构.字符串.important;
  * 链接：https://leetcode-cn.com/problems/reverse-string
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode344 {
+public class LeetCode344_easy {
 
     public static void main(String[] args) {
         char[] s = {'a', 'b', 'c', 's', 'e'};

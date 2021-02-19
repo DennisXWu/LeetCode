@@ -1,11 +1,11 @@
-package LeetCode.数据结构.字符串.important;
+package LeetCode.数据结构.字符串.high;
 
 import java.util.HashSet;
 
 /**
  * Created by wxg on 2021/2/5.
  */
-public class LeetCode459 {
+public class LeetCode459_easy {
 
     public boolean repeatedSubstringPattern(String s) {
         int middle = s.length() / 2;
