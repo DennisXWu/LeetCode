@@ -1,11 +1,11 @@
-package LeetCode.数据结构.链表;
+package LeetCode.数据结构.链表.high;
 
 import com.google.gson.Gson;
 
 /**
  * Created by wxg on 2021/1/16.
  */
-public class LeetCode2 {
+public class LeetCode2_medium {
 
     public static void main(String[] args) {
         ListNode listNode1 = new ListNode(9);
@@ -20,7 +20,7 @@ public class LeetCode2 {
         listNode2.next = new ListNode(9);
         listNode2.next.next = new ListNode(9);
         listNode2.next.next.next = new ListNode(9);
-        System.out.println(new Gson().toJson(new LeetCode2().addTwoNumbers(listNode1, listNode2)));
+        System.out.println(new Gson().toJson(new LeetCode2_medium().addTwoNumbers(listNode1, listNode2)));
 
     }
 

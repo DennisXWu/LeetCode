@@ -1,14 +1,14 @@
-package LeetCode.数据结构.链表;
+package LeetCode.数据结构.链表.high;
 
 import com.google.gson.Gson;
 
 /**
  * Created by wxg on 2021/1/11.
  */
-public class LeetCode21 {
+public class LeetCode21_easy {
 
     public static void main(String[] args) {
-        LeetCode21 leetCode21 = new LeetCode21();
+        LeetCode21_easy leetCode21 = new LeetCode21_easy();
         ListNode l1 = leetCode21.construct();
         ListNode l2 = leetCode21.construct2();
         System.out.println(new Gson().toJson(leetCode21.recMeregTwoLists(l1, l2)));

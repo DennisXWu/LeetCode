@@ -1,4 +1,4 @@
-package LeetCode.数据结构.链表;
+package LeetCode.数据结构.链表.high;
 
 /**
  * Created by wxg on 2021/1/24.
@@ -12,10 +12,10 @@ package LeetCode.数据结构.链表;
  * 输入: 1->2->6->3->4->5->6, val = 6
  * 输出: 1->2->3->4->5
  */
-public class LeetCode203￥ {
+public class LeetCode203_easy {
 
     public static void main(String[] args) {
-        LeetCode203￥ leetCode203 = new LeetCode203￥();
+        LeetCode203_easy leetCode203 = new LeetCode203_easy();
         leetCode203.removeElements(leetCode203.construct(), 1);
     }
 

@@ -1,4 +1,4 @@
-package LeetCode.数据结构.链表;
+package LeetCode.数据结构.链表.high;
 
 /**
  * Created by wxg on 2021/1/24.
@@ -12,7 +12,7 @@ package LeetCode.数据结构.链表;
  * 输入: 1->2->3->4->5->NULL
  * 输出: 5->4->3->2->1->NULL
  */
-public class LeetCode206￥ {
+public class LeetCode206_easy {
 
     public ListNode reverseList(ListNode head) {
         if (head == null) return null;

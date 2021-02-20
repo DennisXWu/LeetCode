@@ -1,4 +1,4 @@
-package LeetCode.数据结构.链表;
+package LeetCode.数据结构.链表.high;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -6,10 +6,10 @@ import java.util.Set;
 /**
  * Created by wxg on 2021/1/24.
  */
-public class LeetCode142 {
+public class LeetCode142_medium {
 
     public static void main(String[] args) {
-        LeetCode142 leetCode142 = new LeetCode142();
+        LeetCode142_medium leetCode142 = new LeetCode142_medium();
         leetCode142.detectCycle2(leetCode142.construct());
     }
 
