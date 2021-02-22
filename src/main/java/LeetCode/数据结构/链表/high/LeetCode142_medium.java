@@ -16,7 +16,6 @@ public class LeetCode142_medium {
     public ListNode detectCycle(ListNode head) {
 
         Set<ListNode> set = new HashSet<>();
-
         while (head != null) {
             if (set.contains(head)) {
                 return head;
