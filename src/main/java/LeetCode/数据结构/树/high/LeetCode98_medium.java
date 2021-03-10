@@ -1,14 +1,14 @@
-package LeetCode.数据结构.树;
+package LeetCode.数据结构.树.high;
 
 /**
  * Created by wxg on 2021/1/11.
  */
 
 //验证二叉搜索树
-public class LeetCode98 {
+public class LeetCode98_medium {
 
     public static void main(String[] args) {
-        LeetCode98 leetCode98 = new LeetCode98();
+        LeetCode98_medium leetCode98 = new LeetCode98_medium();
         TreeNode treeNode = leetCode98.construct();
         System.out.println(leetCode98.isValidBST(treeNode, null, null));
     }

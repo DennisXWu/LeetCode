@@ -1,4 +1,4 @@
-package LeetCode.算法.双指针;
+package LeetCode.算法.双指针.high;
 
 /**
  * Created by wxg on 2021/3/8.

@@ -1,9 +1,9 @@
-package LeetCode.数据结构.树;
+package LeetCode.数据结构.树.high;
 
 /**
  * Created by wxg on 2021/1/11.
  */
-public class LeetCode104 {
+public class LeetCode104_easy {
 
     public int maxDepth(TreeNode root) {
         if (root == null) {

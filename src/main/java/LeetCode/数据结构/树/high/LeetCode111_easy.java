@@ -1,9 +1,9 @@
-package LeetCode.数据结构.树;
+package LeetCode.数据结构.树.high;
 
 /**
  * Created by wxg on 2020/12/24.
  */
-public class LeetCode111 {
+public class LeetCode111_easy {
 
     public int minDepth(TreeNode root) {
 

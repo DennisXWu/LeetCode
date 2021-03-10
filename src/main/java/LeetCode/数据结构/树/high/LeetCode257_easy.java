@@ -1,4 +1,4 @@
-package LeetCode.数据结构.树;
+package LeetCode.数据结构.树.high;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,11 +6,11 @@ import java.util.List;
 /**
  * Created by wxg on 2020/12/24.
  */
-public class LeetCode257 {
+public class LeetCode257_easy {
     static List<String> list = new ArrayList<>();
 
     public static void main(String[] args) {
-        LeetCode257 leetCode257 = new LeetCode257();
+        LeetCode257_easy leetCode257 = new LeetCode257_easy();
         leetCode257.binaryTreePaths(construct());
 
         for (String str : list) {
