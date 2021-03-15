@@ -27,19 +27,19 @@ import java.util.Set;
  * 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
  *      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
  */
-public class LeetCode3_medium {
+public class LeetCode3_medium_2 {
 
     public static void main(String[] args) {
-        String str = "abcabcbb";
+        String str = "pwwkew";
         System.out.println(lengthOfLongestSubstring(str));
     }
 
 
     public static int lengthOfLongestSubstring(String s) {
         char[] chars = s.toCharArray();
+        Set<Character> set = new HashSet<>();
         int right = 0;
         int max = 0;
-        Set<Character> set = new HashSet<>();
         for (int i = 0; i < chars.length; i++) {
             //如果有重复的左指针继续往前，直到set中没有重复数据
             if (i != 0) {
@@ -47,13 +47,13 @@ public class LeetCode3_medium {
             }
 
             //如果没有重复的则右指针继续往前
-            while (right < chars.length && !set.contains(chars[right])) {
+            while (right < s.length() && !set.contains(chars[right])) {
                 set.add(chars[right]);
                 right++;
             }
 
             //计算非重复子串长度
-            max = Math.max(max, set.size());
+            max = max < set.size() ? set.size() : max;
         }
         return max;
     }

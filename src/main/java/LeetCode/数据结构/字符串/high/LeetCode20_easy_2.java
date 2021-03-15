@@ -4,8 +4,6 @@ package LeetCode.数据结构.字符串.high;
  * Created by wxg on 2020/8/24.
  */
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
 
 /**
@@ -42,33 +40,34 @@ import java.util.Stack;
  * 链接：https://leetcode-cn.com/problems/valid-parentheses
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode20_easy {
+public class LeetCode20_easy_2 {
 
     public static void main(String[] args) {
-        String str = "(([)]";
+        String str = "()";
         System.out.println(isValid(str));
     }
 
     public static boolean isValid(String s) {
-        Map<Character, Character> pairs = new HashMap<Character, Character>() {{
-            put(')', '(');
-            put(']', '[');
-            put('}', '{');
-        }};
+        Stack<Character> stack = new Stack<>();
 
-        Stack<Character> stack = new Stack();
         char[] chars = s.toCharArray();
+
         for (int i = 0; i < chars.length; i++) {
-            char c = chars[i];
-            if (pairs.containsKey(c)) {
-                if (stack.isEmpty() || !(stack.peek().equals(pairs.get(c)))) {
-                    return false;
-                }
-                stack.pop();
-            } else {
+            char c = s.charAt(i);
+            if (c == '(' || c == '[' || c == '{') {
                 stack.push(c);
+            } else {
+                if (stack.size() == 0) return false;
+                Character pop = stack.pop();
+                if (pop == '(' && c != ')') return false;
+                if (pop == '[' && c != ']') return false;
+                if (pop == '{' && c != '}') return false;
             }
         }
-        return stack.isEmpty();
+        if (stack.size() == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
