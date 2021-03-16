@@ -26,7 +26,7 @@ package LeetCode.数据结构.字符串.high;
  * 链接：https://leetcode-cn.com/problems/longest-common-prefix
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode14_easy {
+public class LeetCode14_easy_2 {
 
     public static void main(String[] args) {
         String[] strs = {"flower", "flow", "flight" };
@@ -74,5 +74,32 @@ public class LeetCode14_easy {
             }
         }
         return strs[0];
+    }
+
+    //横向比较
+    public static String longestCommonPrefix3(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
+        int minLength = Integer.MAX_VALUE;
+        for (int i = 0; i < strs.length; i++) {
+            minLength = Math.min(strs[i].length(), minLength);
+        }
+
+        String first = strs[0];
+        String prex = "";
+        for (int i = 0; i < minLength; i++) {
+            String substring = first.substring(0, i+1);
+            int count = 0;
+            for (int j = 1; j < strs.length; j++) {
+                if (strs[j].indexOf(substring) == 0) {
+                    count++;
+                }
+            }
+            if (count == strs.length - 1) {
+                prex = substring;
+            }
+        }
+        return prex;
     }
 }

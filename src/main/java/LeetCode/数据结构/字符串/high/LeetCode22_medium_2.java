@@ -6,12 +6,12 @@ import java.util.List;
 /**
  * Created by wxg on 2020/12/14.
  */
-public class LeetCode22_medium {
+public class LeetCode22_medium_2 {
     List<String> list = new ArrayList<>();
     int n;
 
     public static void main(String[] args) {
-        System.out.println(new LeetCode22_medium().generateParenthesis(3));
+        System.out.println(new LeetCode22_medium_2().generateParenthesis(1));
     }
 
     public List<String> generateParenthesis(int n) {
