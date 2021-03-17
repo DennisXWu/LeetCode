@@ -14,7 +14,7 @@ package LeetCode.数据结构.字符串.high;
  * 输入："Let's take LeetCode contest"
  * 输出："s'teL ekat edoCteeL tsetnoc"
  */
-public class LeetCode557_easy {
+public class LeetCode557_easy_2 {
 
     //方法1
     public String reverseWords(String s) {

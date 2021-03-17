@@ -5,7 +5,7 @@ import java.util.HashSet;
 /**
  * Created by wxg on 2021/2/5.
  */
-public class LeetCode459_easy {
+public class LeetCode459_easy_2 {
 
     public boolean repeatedSubstringPattern(String s) {
         int middle = s.length() / 2;
@@ -22,6 +22,24 @@ public class LeetCode459_easy {
                     set.add(builder.toString());
                 }
                 if (set.size() == 1) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public boolean repeatedSubstringPattern2(String s) {
+        for(int i=1;i<=s.length()/2;i++){
+            if(s.length()%i==0){
+                boolean result=true;
+                for(int j=i;j<s.length();j++){
+                    if(s.charAt(j)!=s.charAt(j-i)){
+                        result=false;
+                        break;
+                    }
+                }
+                if(result){
                     return true;
                 }
             }

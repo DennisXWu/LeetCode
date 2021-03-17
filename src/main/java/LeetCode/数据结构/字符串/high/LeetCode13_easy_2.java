@@ -50,7 +50,7 @@ import java.util.Map;
  * 输出: 1994
  * 解释: M = 1000, CM = 900, XC = 90, IV = 4.
  */
-public class LeetCode13_easy {
+public class LeetCode13_easy_2 {
     public static void main(String[] args) {
         String str = "IV";
         System.out.println(romanToInt(str));

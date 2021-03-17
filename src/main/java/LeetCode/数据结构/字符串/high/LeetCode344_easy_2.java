@@ -26,7 +26,7 @@ package LeetCode.数据结构.字符串.high;
  * 链接：https://leetcode-cn.com/problems/reverse-string
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class LeetCode344_easy {
+public class LeetCode344_easy_2 {
 
     public static void main(String[] args) {
         char[] s = {'a', 'b', 'c', 's', 'e'};
@@ -43,5 +43,19 @@ public class LeetCode344_easy {
         s[left++] = s[right];
         s[right--] = temp;
         reverseString(s, left, right);
+    }
+
+    //双指针
+    public void reverseString2(char[] s) {
+        int start=0;
+        int end=s.length-1;
+        while(start<end){
+            char temp=s[start];
+            s[start]=s[end];
+            s[end]=temp;
+
+            start++;
+            end--;
+        }
     }
 }
