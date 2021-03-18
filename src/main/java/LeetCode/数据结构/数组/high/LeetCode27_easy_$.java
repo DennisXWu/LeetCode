@@ -3,11 +3,11 @@ package LeetCode.数据结构.数组.high;
 /**
  * Created by wxg on 2021/1/17.
  */
-public class LeetCode27￥ {
+public class LeetCode27_easy_$ {
 
     public static void main(String[] args) {
         int[] array = new int[]{0, 1, 2, 2, 3, 0, 4, 2};
-        System.out.println(new LeetCode27￥().baoliRemoveElement(array, 2));
+        System.out.println(new LeetCode27_easy_$().baoliRemoveElement(array, 2));
     }
 
     //暴力

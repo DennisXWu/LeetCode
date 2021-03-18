@@ -26,7 +26,7 @@ package LeetCode.数据结构.数组.high;
  *
  * 你不需要考虑数组中超出新长度后面的元素。
  */
-public class LeetCode26￥ {
+public class LeetCode26_easy_$ {
     public static void main(String[] args) {
         int[] nums = {1,1,2};
         System.out.println(removeDuplicates(nums));
